@@ -1,0 +1,3 @@
+- mobile navigation with to percentages
+- Dropdowns animation timing too Fadt
+- Adding Responsiveness to hero sections backdrops
