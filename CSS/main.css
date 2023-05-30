@@ -119,7 +119,6 @@ span.nit::before {
 
 div.mobnav {
   background: #212121;
-  position: absolute;
   position: fixed;
   top: 0;
   left: 0;
