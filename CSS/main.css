@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/tt-octosquares-trl");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,12 +16,13 @@ html {
 }
 
 body {
-  font-family: "TT Squares", "Arial";
+  font-family: "TT Octosquares Trl", "Poppins", "Arial";
   color: white;
   background: #1a1919;
 }
 
-li, a {
+li,
+a {
   font-weight: 500;
   font-size: 16px;
   color: var(--col);
@@ -37,11 +39,11 @@ li, a {
   --txt-section: 13em 2em;
   --ff-weight: 400;
   --ff-size: 2em;
-  --li-a-font-size: calc(4px * 3) ;
+  --li-a-font-size: calc(4px * 3);
   --1st-linear: hsl(0, 1%, 15%) 1%;
   --2nd-linear: hsl(0, 0%, 0%) 20%;
   --ff-size-links: 1.2em;
-  --img-scale: calc(1.0 + 0.16 - 0.1);
+  --img-scale: calc(1 + 0.16 - 0.1);
   --margin-divs-products: calc(-120px + 80px);
   --products-padding: 3em 2em;
 }
@@ -57,12 +59,12 @@ li, a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsla(189deg, 70%, 44%, 0.6);
+  background: hsla(189, 70%, 44%, 0.6);
   border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(189deg, 70%, 44%);
+  background: hsl(189, 70%, 44%);
 }
 
 div.mobnav::-webkit-scrollbar {
@@ -113,8 +115,9 @@ span.nit::before {
   background-image: url("../images/download-removebg-preview (1).png");
   width: 20px;
   height: 20px;
-  background-size: contain;
-  left: -1em;
+  top: 10%;
+  background-size: cover;
+  left: -1.2em;
 }
 
 div.mobnav {
@@ -130,15 +133,15 @@ div.mobnav {
   transform: translateX(-100%);
   transition: transform 350ms ease;
   /*.sublaptops {
-      top: 0%;
-      left: 0%;
-      display: none;
-      position: relative;
-      width: 100%;
-      background: #353333;
-      animation: loadlaptop .5s;
-      transform-origin: top;
-  }*/
+        top: 0%;
+        left: 0%;
+        display: none;
+        position: relative;
+        width: 100%;
+        background: #353333;
+        animation: loadlaptop .5s;
+        transform-origin: top;
+    }*/
 }
 div.mobnav img.close {
   position: absolute;
@@ -224,7 +227,7 @@ div.mobnav div:is(.subthorons, .sublaptops, .subdesktops, .submonitors) ul li a 
   padding: 1.31em 2em;
 }
 div.mobnav div:is(.subthorons, .sublaptops, .subdesktops, .submonitors) ul li a:hover {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 div.mobnav svg text#acer {
   align-self: center;
@@ -264,7 +267,8 @@ div.sub-head ul {
 div.sub-head ul li {
   display: inline-block;
 }
-div.sub-head li, div.sub-head a {
+div.sub-head li,
+div.sub-head a {
   text-decoration: none;
   font-size: 13px;
   padding: 0px 10px;
@@ -284,8 +288,7 @@ section.hero {
   background-size: cover;
   width: 100%;
   height: 75vh;
-  -webkit-animation: LoadCes 2s forwards 2s;
-          animation: LoadCes 2s forwards 2s;
+  animation: LoadCes 2s forwards 2s;
 }
 section.hero div.flex-content {
   display: flex;
@@ -298,7 +301,8 @@ section.hero div.flex-content {
   margin-left: auto;
   position: relative;
 }
-section.hero div.flex-content h2.just, section.hero div.flex-content p.suj {
+section.hero div.flex-content h2.just,
+section.hero div.flex-content p.suj {
   display: none;
 }
 section.hero div.flex-content h2 {
@@ -448,13 +452,11 @@ div.products div img:hover {
   span.des > h3 {
     width: 150px;
   }
-
   section.hero {
     background-size: cover !important;
     background-position-x: 30% !important;
     width: 100%;
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
     height: 80vh !important;
   }
 }
@@ -675,7 +677,7 @@ iframe {
 }
 
 button#Locate {
-  background: hsl(189deg, 70%, 50%);
+  background: hsl(189, 70%, 50%);
   border: none;
   text-align: center;
   width: 100%;
@@ -689,7 +691,7 @@ button#Locate {
   cursor: pointer;
 }
 button#Locate:hover {
-  background: hsl(189deg, 70%, 44%);
+  background: hsl(189, 70%, 44%);
 }
 
 /*MEDIA QUERIES FOR DEVICES*/
@@ -697,7 +699,6 @@ button#Locate:hover {
   header {
     display: none;
   }
-
   section.hero {
     background-size: 135% 100%;
     background-position-x: right;
@@ -713,10 +714,12 @@ button#Locate:hover {
     right: 0;
     top: -120px;
   }
-  section.hero div.flex-content h2.beak, section.hero div.flex-content p.broke {
+  section.hero div.flex-content h2.beak,
+  section.hero div.flex-content p.broke {
     display: none;
   }
-  section.hero div.flex-content h2.just, section.hero div.flex-content p.suj {
+  section.hero div.flex-content h2.just,
+  section.hero div.flex-content p.suj {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -735,14 +738,12 @@ button#Locate:hover {
     align-self: center;
     transform: translate(-80px, 80px);
   }
-
-  div.sub-head ul, li {
+  div.sub-head ul,
+  li {
     display: none;
   }
-
   div.sub-head {
     display: flex;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -758,16 +759,6 @@ button#Locate:hover {
     visibility: visible;
     cursor: pointer;
     margin-right: 50px;
-  }
-}
-@-webkit-keyframes LoadCes {
-  from {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-  to {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 @keyframes LoadCes {
@@ -794,7 +785,7 @@ div.characters div.sub-list ul li a {
   font-size: 12px;
 }
 div.characters div.sub-list ul li a:hover {
-  color: hsl(0deg, 0%, 80%);
+  color: hsl(0, 0%, 80%);
   transition: none;
 }
 div.characters * ul.about > li {
@@ -802,7 +793,10 @@ div.characters * ul.about > li {
   font-weight: 600;
   font-size: 15.2px;
 }
-div.characters div.article, div.characters .services, div.characters .resources, div.characters .legal {
+div.characters div.article,
+div.characters .services,
+div.characters .resources,
+div.characters .legal {
   line-height: 3.5;
 }
 div.characters * ul {
@@ -818,17 +812,15 @@ div.responsive_Ch {
     margin: 0;
     padding: 0;
   }
-
-  *:before, *:after {
+  *:before,
+  *:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-
   div.characters {
     display: none;
   }
-
   div.responsive_Ch {
     display: block;
     width: 100%;
@@ -852,7 +844,8 @@ div.responsive_Ch {
     position: relative;
     transition: none;
   }
-  div.responsive_Ch ul li img.plusBtn, div.responsive_Ch ul li img {
+  div.responsive_Ch ul li img.plusBtn,
+  div.responsive_Ch ul li img {
     position: absolute;
     right: 3.2em;
     transition: 0.6s ease;
@@ -861,7 +854,6 @@ div.responsive_Ch {
     color: #ffffff;
     transition: none;
   }
-
   div:is(.Sub_list_1, .Sub_list_2, .Sub_list_3, .Sub_list_4) {
     width: 100%;
     top: 0%;
@@ -885,7 +877,7 @@ div.responsive_Ch {
     transition: none;
   }
   div:is(.Sub_list_1, .Sub_list_2, .Sub_list_3, .Sub_list_4) ul li a:hover {
-    color: hsl(0deg, 0%, 85%);
+    color: hsl(0, 0%, 85%);
   }
 }
 .specify {
@@ -916,7 +908,7 @@ div.top {
   position: fixed;
   bottom: 2.5em;
   right: 1.5em;
-  background: hsla(345deg, 4%, 24%, 0.8);
+  background: hsla(345, 4%, 24%, 0.8);
   border-radius: 50%;
   width: 45px;
   height: 45px;
@@ -924,8 +916,7 @@ div.top {
   text-align: center;
   z-index: 99;
   cursor: pointer;
-  -webkit-animation: fade-in 500ms ease;
-          animation: fade-in 500ms ease;
+  animation: fade-in 500ms ease;
 }
 div.top:hover svg.toTop {
   transform: translateY(-10%);
@@ -936,16 +927,7 @@ div.top svg.toTop {
   margin-top: 25%;
 }
 div.top:hover {
-  background: hsl(345deg, 4%, 29%);
-}
-
-@-webkit-keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  background: hsl(345, 4%, 29%);
 }
 
 @keyframes fade-in {
@@ -954,14 +936,6 @@ div.top:hover {
   }
   to {
     opacity: 1;
-  }
-}
-@-webkit-keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
   }
 }
 @keyframes fade-out {
@@ -973,7 +947,7 @@ div.top:hover {
   }
 }
 footer {
-  background: hsl(225deg, 3%, 20%);
+  background: hsl(225, 3%, 20%);
 }
 footer main div.row-gutter {
   display: flex;
@@ -1004,7 +978,7 @@ footer main div.row-gutter::after {
   width: 100%;
   height: 0.08px;
   top: 100%;
-  background: hsla(189deg, 70%, 44%, 0.6);
+  background: hsla(189, 70%, 44%, 0.6);
 }
 footer main div#hr {
   -webkit-appearance: none;
@@ -1149,7 +1123,6 @@ footer div.endGutter p.rid {
     --ff-size: 1.6em;
     --ff-size-links: 1em;
   }
-
   section.toom {
     background-position-x: 20%;
   }
@@ -1158,7 +1131,6 @@ footer div.endGutter p.rid {
   span.des > h3 {
     width: 150px;
   }
-
   section.sloop {
     background-image: url(../images/herobanner-small.jpg);
   }
@@ -1167,7 +1139,6 @@ footer div.endGutter p.rid {
   img.trial {
     max-width: calc(6vw + 7em);
   }
-
   section.hero {
     height: 60vh !important;
   }
